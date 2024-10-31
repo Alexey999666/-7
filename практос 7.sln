@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "практос 7", "практос 7\практос 7.csproj", "{CA591B79-7ED6-43AF-8637-E855B469ECC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib_14", "Lib_14\Lib_14.csproj", "{36EE69C0-4464-4B6B-9712-3D827F424FCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA591B79-7ED6-43AF-8637-E855B469ECC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA591B79-7ED6-43AF-8637-E855B469ECC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA591B79-7ED6-43AF-8637-E855B469ECC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA591B79-7ED6-43AF-8637-E855B469ECC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36EE69C0-4464-4B6B-9712-3D827F424FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EE69C0-4464-4B6B-9712-3D827F424FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EE69C0-4464-4B6B-9712-3D827F424FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EE69C0-4464-4B6B-9712-3D827F424FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {289BF017-9DEB-431A-A86E-5876E8265D40}
+	EndGlobalSection
+EndGlobal

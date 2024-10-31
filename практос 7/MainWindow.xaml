@@ -1,0 +1,75 @@
+﻿<Window x:Class="практос_7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:практос_7"
+        mc:Ignorable="d"            
+        Title="Практическая 7" Height="472" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Menu Grid.Row="0" Background="DarkViolet" Foreground="Gold" Grid.ColumnSpan="5">
+            <MenuItem Header="Файл" Height="25" Background="DarkViolet" Foreground="Gold">
+                <MenuItem Header="Выйти" Click="btnExit_Click" Background="DarkViolet" Foreground="Gold"/>
+            </MenuItem>
+            <MenuItem Header="Действия" Background="DarkViolet" Foreground="Gold">
+                <MenuItem Header="Записать" ToolTip="Создать новую жидкость" Click="btnWrite_Click"  Background="DarkViolet" Foreground="Gold"/>
+                <MenuItem Header="Изменить" ToolTip="Поменять пораметры жидкости" Click="btnChange_Click"  Background="DarkViolet" Foreground="Gold"/>
+                <MenuItem Header="Показать" ToolTip="Показать параметры житкости" Click="btnShowLiquid_Click"  Background="DarkViolet" Foreground="Gold"/>
+                <MenuItem Header="Очистить"  Click="btnClean_Click"  Background="DarkViolet" Foreground="Gold"/>
+            </MenuItem>
+            <MenuItem Header="Справка" Background="DarkViolet" Foreground="Gold">
+                <MenuItem Header="О программе" Click="btnInfo_Click" Background="DarkViolet" Foreground="Gold"/>
+                <MenuItem Header="Разработчик" Click="btnDeveloper_Click" Background="DarkViolet" Foreground="Gold"/>
+            </MenuItem>
+        </Menu>
+        <StackPanel Grid.Row="1" Grid.Column="0" Background="Red" >
+            <Label Content="Название " HorizontalContentAlignment="Center" Foreground="Orange"/>
+            <TextBox x:Name="tbNameInput" TextWrapping="Wrap" Height="60" TextAlignment="Center"   Background="Red" BorderBrush="Black"  />
+            <Button   Content="Записать" ToolTip="Создать новый" Click="btnWrite_Click" Height="50" Margin="0,10,0,10" Background="DarkRed" Foreground="Orange" BorderBrush="Black" />
+            <Label Content="Название " HorizontalContentAlignment="Center" Foreground="Orange"/>
+            <TextBox x:Name="tbNameOutput" IsReadOnly="True" TextWrapping="Wrap" TextAlignment="Center" Background="Red" BorderBrush="Black"   Height="60"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Background="Blue" >
+            <Label Content="Плотность " HorizontalContentAlignment="Center" Foreground="Yellow" />
+            <TextBox x:Name="tbDensityInput" TextWrapping="Wrap" TextAlignment="Center" Height="60" Margin="0,0,0,40"  Background="Blue" BorderBrush="Black" />
+
+            <Label Content="Плотность " HorizontalContentAlignment="Center" Margin="0,30,0,0" Foreground="Yellow"/>
+            <TextBox x:Name="tbDensityOutput" IsReadOnly="True" TextWrapping="Wrap" TextAlignment="Center" Height="60" Background="Blue" BorderBrush="Black"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Background="Green" >
+            <Label Content="Объём " HorizontalContentAlignment="Center" Foreground="Goldenrod"/>
+            <TextBox x:Name="tbVolumeInput" TextWrapping="Wrap" TextAlignment="Center" Height="60"  Background="Green" BorderBrush="Black"  />
+            <Button  Content="Изменить" ToolTip="Поменять пораметры " Click="btnChange_Click" Height="50" Margin="0,10,0,10" Background="DarkGreen" Foreground="Goldenrod" BorderBrush="Black"/>
+            <Label Content="Объём " HorizontalContentAlignment="Center" Foreground="Goldenrod"/>
+            <TextBox x:Name="tbVolumeOutput" IsReadOnly="True" TextWrapping="Wrap" TextAlignment="Center" Height="60" Background="Green" BorderBrush="Black"/>
+        </StackPanel>
+        <StackPanel Grid.Column="3" Grid.Row="1" Background="DarkOrange">
+            <Label Content="Крепость" HorizontalContentAlignment="Center" Foreground="GreenYellow"/>
+            <TextBox x:Name="tbStrengthInput" TextWrapping="Wrap" Margin="0,0,0,40" TextAlignment="Center" Height="60"  Background="DarkOrange" BorderBrush="Black"  />
+
+            <Label Content="Крепость" HorizontalContentAlignment="Center" Margin="0,30,0,0" Foreground="GreenYellow"/>
+            <TextBox x:Name="tbStrengthOutput" IsReadOnly="True" TextWrapping="Wrap" TextAlignment="Center" Height="60"  Background="DarkOrange" BorderBrush="Black"  />
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="4" Background="LightCoral">
+            <Label Content="Содержнание хмеля" HorizontalContentAlignment="Center" Foreground="YellowGreen"/>
+            <TextBox x:Name="tbHopsPercentageInput" TextWrapping="Wrap" TextAlignment="Center" Height="60"  Background="LightCoral" BorderBrush="Black"  />
+            <Button  Content="Показать" ToolTip="Показать параметры " Click="btnShowLiquid_Click" Height="50" Margin="0,10,0,10" Background="Coral" Foreground="YellowGreen" BorderBrush="Black"/>
+            <Label Content="Содержание хмеля" HorizontalContentAlignment="Center" Foreground="YellowGreen"/>
+            <TextBox x:Name="tbHopsPercentageOutput" IsReadOnly="True" TextWrapping="Wrap" TextAlignment="Center" Height="60"  Background="LightCoral" BorderBrush="Black"  />
+        </StackPanel>
+    </Grid>
+</Window>
+
